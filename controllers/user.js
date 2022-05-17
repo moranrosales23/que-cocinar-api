@@ -21,4 +21,4 @@ const create = async (req, res) => {
   }
 };
 
-module.exports = { logIn };
+module.exports = { logIn, create };
