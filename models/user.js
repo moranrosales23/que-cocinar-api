@@ -31,6 +31,14 @@ const User = new mongoose.Schema({
   img: {
     type: String,
   },
+  favorites: [
+    {
+      recipe: {
+        type: String,
+        required: [true, "The recipe is required"],
+      },
+    },
+  ],
 });
 
 User.pre("save", async function (next) {

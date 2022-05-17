@@ -1,4 +1,4 @@
-const success = (data, message = "") => ({
+const success = (data = {}, message = "") => ({
   code: 200,
   message,
   data,
