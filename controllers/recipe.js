@@ -10,4 +10,13 @@ const all = async (req, res) => {
   }
 };
 
-module.exports = { all };
+const find = async (req, res) => {
+  try {
+    const { code, message, data } = await Recipe.find(req.params.id, req.body);
+    res.status(code).send({ message, data });
+  } catch (error) {
+    res.status(400).send({ message: "Fav couldn't be created ", error });
+  }
+};
+
+module.exports = { all, find };

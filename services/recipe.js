@@ -20,8 +20,14 @@ const all = async ({ page = 1, limit = 10 }) => {
     page,
     limit,
   });
-
   return recipes;
+};
+
+const find = async (_id, { _user_id }) => {
+  const recipe = await Recipe.find({ _id });
+  return !recipe
+    ? Message.notFound("Recipe not found")
+    : Message.success(recipe);
 };
 
 module.exports = { setFavorite, all };
