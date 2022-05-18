@@ -15,9 +15,13 @@ const setFavorite = async ({ recipe, _user_id }) => {
   return Message.success();
 };
 
-const getAll = async () => {
-  const recipes = await Recipe.find({});
+const all = async ({ page = 1, limit = 10 }) => {
+  const recipes = await Recipe.find({}, "_id name category img rate").paginate({
+    page,
+    limit,
+  });
+
   return recipes;
 };
 
-module.exports = { setFavorite, getAll };
+module.exports = { setFavorite, all };

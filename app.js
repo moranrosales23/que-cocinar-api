@@ -1,8 +1,11 @@
 const express = require("express");
-const { User } = require("./routes");
+const { User, Recipe } = require("./routes");
+const PREFIX = "/api/v1/";
+
 const app = express();
 
 app.use(express.json());
-app.use("/api/v1/auth", User);
+app.use(`${PREFIX}auth`, User);
+app.use(`${PREFIX}recipe`, Recipe);
 
 module.exports = app;

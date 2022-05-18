@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Paginate = require("../utils/paginate");
 
 const Recipe = new mongoose.Schema({
   name: {
@@ -40,7 +41,7 @@ const Recipe = new mongoose.Schema({
   comments: [
     {
       user: {
-        type: ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "User",
       },
       description: {
@@ -53,4 +54,5 @@ const Recipe = new mongoose.Schema({
   },
 });
 
+Recipe.plugin(Paginate);
 module.exports = mongoose.model("Recipe", Recipe);
