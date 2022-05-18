@@ -1,204 +1,210 @@
 [
     {
-        "name": "Apple Frangipan Tart",
-        "category": "Dessert",
-        "instructions": "Preheat the oven to 200C\/180C Fan\/Gas 6.\r\nPut the biscuits in a large re-sealable freezer bag and bash with a rolling pin into fine crumbs. Melt the butter in a small pan, then add the biscuit crumbs and stir until coated with butter. Tip into the tart tin and, using the back of a spoon, press over the base and sides of the tin to give an even layer. Chill in the fridge while you make the filling.\r\nCream together the butter and sugar until light and fluffy. You can do this in a food processor if you have one. Process for 2-3 minutes. Mix in the eggs, then add the ground almonds and almond extract and blend until well combined.\r\nPeel the apples, and cut thin slices of apple. Do this at the last minute to prevent the apple going brown. Arrange the slices over the biscuit base. Spread the frangipane filling evenly on top. Level the surface and sprinkle with the flaked almonds.\r\nBake for 20-25 minutes until golden-brown and set.\r\nRemove from the oven and leave to cool for 15 minutes. Remove the sides of the tin. An easy way to do this is to stand the tin on a can of beans and push down gently on the edges of the tin.\r\nTransfer the tart, with the tin base attached, to a serving plate. Serve warm with cream, cr\u00e8me fraiche or ice cream.",
+        "name": "Tarta Frangipane De Manzana",
+        "category": "Postre",
+        "instructions": "Precaliente el horno a 200C\/180C Ventilador\/Gas 6.\r\nColoque las galletas en una bolsa grande para congelar con cierre hermético y triture con un rodillo hasta que queden migas finas. Derrita la mantequilla en una cacerola pequeña, luego agregue las migas de galleta y revuelva hasta que se cubra con mantequilla. Incline en el molde para tarta y, con el dorso de una cuchara, presione sobre la base y los lados del molde para dar una capa uniforme. Enfríe en el refrigerador mientras hace el relleno.\r\nBate la mantequilla y el azúcar hasta que estén suaves y esponjosos. Puedes hacerlo en un procesador de alimentos si tienes uno. Procese durante 2-3 minutos. Mezcle los huevos, luego agregue las almendras molidas y el extracto de almendras y mezcle hasta que estén bien combinados.\r\nPele las manzanas y corte rodajas finas de manzana. Haga esto en el último minuto para evitar que la manzana se ponga marrón. Acomoda las rebanadas sobre la base de galleta. Extienda el relleno de frangipane uniformemente en la parte superior. Alise la superficie y espolvoree con las almendras laminadas.\r\nHornee durante 20-25 minutos hasta que estén doradas y cuaje.\r\nRetire del horno y deje enfriar durante 15 minutos. Retire los lados de la lata. Una manera fácil de hacer esto es colocar la lata sobre una lata de frijoles y empujar suavemente hacia abajo sobre los bordes de la lata.\r\nTransfiera la tarta, con la base de lata unida, a un plato para servir. Sirva tibio con crema, crema fresca o helado.",
         "img": "https:\/\/www.themealdb.com\/images\/media\/meals\/wxywrq1468235067.jpg",
-        "tags": "Tart,Baking,Fruity",
+        "tags": "tarta, horneado, afrutado",
         "youtube": "https:\/\/www.youtube.com\/watch?v=rp8Slv4INLk",
-        "ingredients":[
+        "ingredients": [
             {
-                "name": "digestive biscuits",
+                "name": "galletas",
                 "measure": "175g"
             },
             {
-                "name": "butter",
+                "name": "mantequilla",
                 "measure": "75g"
             },
             {
-                "name": "Bramley apples",
+                "name": "manzanas bramley",
                 "measure": "200g"
             },
             {
-                "name": "butter, softened",
+                "name": "mantequilla derritida",
                 "measure": "75g"
             },
             {
-                "name": "caster sugar",
+                "name": "azúcar glas",
                 "measure": "75g"
             },
             {
-                "name": "free-range eggs, beaten",
+                "name": "huevos de gallinas camperas, batidos",
                 "measure": "2"
             },
             {
-                "name": "ground almonds",
+                "name": "almendra molida",
                 "measure": "75g"
             },
             {
-                "name": "almond extract",
-                "measure": "1 tsp"
+                "name": "extracto de almendra",
+                "measure": "1 cucharadita"
             },
             {
-                "name": "flaked almonds",
+                "name": "almendras fileteadas",
                 "measure": "50g"
             }
-
-        ]
-        
+        ],
+        "comments": [],
+        "rate": 0
     },
     {
-        "name": "Apple & Blackberry Crumble",
-        "category": "Dessert",
-        "instructions": "Heat oven to 190C\/170C fan\/gas 5. Tip the flour and sugar into a large bowl. Add the butter, then rub into the flour using your fingertips to make a light breadcrumb texture. Do not overwork it or the crumble will become heavy. Sprinkle the mixture evenly over a baking sheet and bake for 15 mins or until lightly coloured.\r\nMeanwhile, for the compote, peel, core and cut the apples into 2cm dice. Put the butter and sugar in a medium saucepan and melt together over a medium heat. Cook for 3 mins until the mixture turns to a light caramel. Stir in the apples and cook for 3 mins. Add the blackberries and cinnamon, and cook for 3 mins more. Cover, remove from the heat, then leave for 2-3 mins to continue cooking in the warmth of the pan.\r\nTo serve, spoon the warm fruit into an ovenproof gratin dish, top with the crumble mix, then reheat in the oven for 5-10 mins. Serve with vanilla ice cream.",
+        "name": "Crumble de manzana y mora",
+        "category": "Postre",
+        "instructions": "Caliente el horno a 190C\/170C fan\/gas 5. Vierta la harina y el azúcar en un tazón grande. Agregue la mantequilla, luego frote la harina con las yemas de los dedos para obtener una textura ligera de pan rallado. No lo trabajes demasiado o el crumble se volverá pesado. Espolvorea la mezcla uniformemente sobre una bandeja para hornear y hornea durante 15 minutos o hasta que esté ligeramente coloreada.\r\nMientras tanto, para la compota, pela, quita el corazón y corta las manzanas en dados de 2 cm. Ponga la mantequilla y el azúcar en una cacerola mediana y derrita a fuego medio. Cocine durante 3 minutos hasta que la mezcla se convierta en un caramelo ligero. Agregue las manzanas y cocine por 3 minutos. Agregue las moras y la canela, y cocine por 3 minutos más. Cubra, retire del fuego y deje durante 2-3 minutos para continuar cocinando en el calor de la sartén.\r\nPara servir, vierta la fruta tibia en una fuente para gratinar resistente al horno, cubra con la mezcla de migajas, luego vuelva a calentar en el horno durante 5-10 minutos. Servir con helado de vainilla.",
         "img": "https:\/\/www.themealdb.com\/images\/media\/meals\/xvsurr1511719182.jpg",
-        "tags": "Pudding",
+        "tags": "Pudín",
         "youtube": "https:\/\/www.youtube.com\/watch?v=4vhcOwVBDO4",
-        "ingredients" : [
+        "ingredients": [
             {
-                "name": "Plain Flour",
+                "name": "harina normal",
                 "measure": "120g"
             },
             {
-                "name": "Caster Sugar",
+                "name": "Azúcar glas",
                 "measure": "60g"
             },
             {
-                "name": "Butter",
+                "name": "Mantequilla",
                 "measure": "60g"
             },
             {
-                "name": "Braeburn Apples",
+                "name": "Manzanas Braeburn",
                 "measure": "300g"
             },
             {
-                "name": "Butter",
+                "name": "Mantequilla liquida",
                 "measure": "30g"
             },
             {
-                "name": "Demerara Sugar",
+                "name": "Azúcar Demerara",
                 "measure": "30g"
             },
             {
-                "name": "Blackberrys",
+                "name": "Moras",
                 "measure": "120g"
             },
             {
-                "name": "Cinnamon",
-                "measure": "1/4 teaspoon"
+                "name": "Canela",
+                "measure": "1/4 cucharilla"
             },
             {
-                "name": "Ice Cream",
-                "measure": "to serve"
+                "name": "Helado",
+                "measure": ""
             }
-        ]
+        ],
+        "comments": [],
+        "rate": 0
     },
     {
         "name": "Apam balik",
-        "category": "Dessert",
-        "instructions": "Mix milk, oil and egg together. Sift flour, baking powder and salt into the mixture. Stir well until all ingredients are combined evenly.\r\n\r\nSpread some batter onto the pan. Spread a thin layer of batter to the side of the pan. Cover the pan for 30-60 seconds until small air bubbles appear.\r\n\r\nAdd butter, cream corn, crushed peanuts and sugar onto the pancake. Fold the pancake into half once the bottom surface is browned.\r\n\r\nCut into wedges and best eaten when it is warm.",
+        "category": "Postre",
+        "instructions": "Mezclar la leche, el aceite y el huevo juntos. Tamizar la harina, el polvo de hornear y la sal en la mezcla. Revuelve bien hasta que todos los ingredientes se combinen de manera uniforme.\r\n\r\nUnta un poco de masa en la sartén. Extienda una capa delgada de masa a un lado de la sartén. Cubra la sartén durante 30-60 segundos hasta que aparezcan pequeñas burbujas de aire.\r\n\r\nAgregue mantequilla, crema de maíz, maní triturado y azúcar al panqueque. Dobla el panqueque por la mitad una vez que la superficie inferior esté dorada.\r\n\r\nCorta en gajos y come mejor cuando esté tibio.",
         "img": "https:\/\/www.themealdb.com\/images\/media\/meals\/adxcbq1619787919.jpg",
         "tags": null,
         "youtube": "https:\/\/www.youtube.com\/watch?v=6R8ffRRJcrg",
-        "ingredients" : [
+        "ingredients": [
             {
-                "name": "Milk",
+                "name": "Leche",
                 "measure": "200ml"
             },
             {
-                "name": "Oil",
+                "name": "Aceite",
                 "measure": "60ml"
             },
             {
-                "name": "Eggs",
+                "name": "Huevos",
                 "measure": "2"
             },
             {
-                "name": "Flour",
+                "name": "Harina",
                 "measure": "1600g"
             },
             {
-                "name": "Baking Powder",
-                "measure": "3 tsp"
+                "name": "Levadura en polvo",
+                "measure": "3 cucharaditas"
             },
             {
-                "name": "Salt",
-                "measure": "1\/2 tsp"
+                "name": "Sal",
+                "measure": "1\/2 cucharadita "
             },
             {
-                "name": "Unsalted Butter",
+                "name": "Mantequilla sin sal",
                 "measure": "25g"
             },
             {
-                "name": "Sugar",
+                "name": "Azúcar",
                 "measure": "45g"
             },
             {
-                "name": "Peanut Butter",
-                "measure": "3 tbs" 
+                "name": "Mantequilla de maní",
+                "measure": "3 cucharadas"
             }
-        ]
+        ],
+        "comments": [],
+        "rate": 0
     },
     {
         "name": "Ayam Percik",
-        "category": "Chicken",
-        "instructions": "In a blender, add the ingredients for the spice paste and blend until smooth.\r\nOver medium heat, pour the spice paste in a skillet or pan and fry for 10 minutes until fragrant. Add water or oil 1 tablespoon at a time if the paste becomes too dry. Don't burn the paste. Lower the fire slightly if needed.\r\nAdd the cloves, cardamom, tamarind pulp, coconut milk, water, sugar and salt. Turn the heat up and bring the mixture to boil. Turn the heat to medium low and simmer for 10 minutes. Stir occasionally. It will reduce slightly. This is the marinade\/sauce, so taste and adjust seasoning if necessary. Don't worry if it's slightly bitter. It will go away when roasting.\r\nWhen the marinade\/sauce has cooled, pour everything over the chicken and marinate overnight to two days.\r\nPreheat the oven to 425 F.\r\nRemove the chicken from the marinade. Spoon the marinade onto a greased (or aluminum lined) baking sheet. Lay the chicken on top of the sauce (make sure the chicken covers the sauce and the sauce isn't exposed or it'll burn) and spread the remaining marinade on the chicken. Roast for 35-45 minutes or until internal temp of the thickest part of chicken is at least 175 F.\r\nLet chicken rest for 5 minutes. Brush the chicken with some of the oil. Serve chicken with the sauce over steamed rice (or coconut rice).",
+        "category": "Pollo",
+        "instructions": "En una licuadora, agregue los ingredientes para la pasta de especias y mezcle hasta que quede suave.\r\nA fuego medio, vierta la pasta de especias en una sartén y fría durante 10 minutos hasta que esté fragante. Agregue agua o aceite 1 cucharada a la vez si la pasta se vuelve demasiado seca. No quemes la pasta. Baje un poco el fuego si es necesario.\r\nAgregue los clavos, el cardamomo, la pulpa de tamarindo, la leche de coco, el agua, el azúcar y la sal. Sube el fuego y deja que la mezcla hierva. Encienda el fuego a medio bajo y cocine a fuego lento durante 10 minutos. Revuelva ocasionalmente. Se reducirá un poco. Esta es la marinada\/salsa, así que pruebe y ajuste la sazón si es necesario. No te preocupes si es un poco amargo. Desaparecerá al asarlo.\r\nCuando la marinada\/la salsa se haya enfriado, vierta todo sobre el pollo y deje marinar durante la noche o dos días.\r\nPrecaliente el horno a 425 F.\r\nRetire el pollo de la marinada. . Vierta la marinada en una bandeja para hornear engrasada (o forrada con aluminio). Coloque el pollo encima de la salsa (asegúrese de que el pollo cubra la salsa y que la salsa no quede expuesta o se queme) y esparza el adobo restante sobre el pollo. Ase durante 35-45 minutos o hasta que la temperatura interna de la parte más gruesa del pollo sea de al menos 175 F.\r\nDeje que el pollo descanse durante 5 minutos. Pincelar el pollo con un poco de aceite. Sirva el pollo con la salsa sobre arroz al vapor (o arroz con coco).",
         "img": "https:\/\/www.themealdb.com\/images\/media\/meals\/020z181619788503.jpg",
         "tags": null,
         "youtube": "https:\/\/www.youtube.com\/watch?v=9ytR28QK6I8",
-        "ingredients" : [
+        "ingredients": [
             {
-                "name": "Chicken Thighs",
+                "name": "Muslos de pollo",
                 "measure": "6"
             },
             {
-                "name": "Challots",
+                "name": "Chalotes o Cebollas",
                 "measure": "16"
             },
             {
-                "name": "Ginger",
+                "name": "Jengibre",
                 "measure": "1 1\/2"
             },
             {
-                "name": "Garlic Clove",
+                "name": "Diente de ajo",
                 "measure": "6"
             },
             {
-                "name": "Cayenne Pepper",
+                "name": "Pimienta de cayena",
                 "measure": "8"
             },
             {
-                "name": "Turmeric",
+                "name": "Cúrcuma",
                 "measure": "2 tbc"
             },
             {
-                "name": "Cumin",
+                "name": "Comino",
                 "measure": "1 1\/2"
             },
             {
-                "name": "Coriander",
+                "name": "Cilantro",
                 "measure": "1 1\/2"
             },
             {
-                "name": "Fennel",
+                "name": "Hinojo",
                 "measure": "1 1\/2"
             },
             {
-                "name": "Tamarind Paste",
-                "measure": "2 tbs"
+                "name": "Pasta de tamarindo",
+                "measure": "2 cucharada"
             },
             {
-                "name": "Coconut Milk",
-                "measure": "1 can"
+                "name": "Leche de coco",
+                "measure": "1 paquete"
             },
             {
-                "name": "Sugar",
-                "measure": "1 tsp"
+                "name": "Azúcar",
+                "measure": "1 cucharadita"
             },
             {
-                "name": "Water",
-                "measure": "1 cup"
+                "name": "Agua",
+                "measure": "1 taza"
             }
-        ]
+        ],
+        "comments": [],
+        "rate": 0
     }
 ]

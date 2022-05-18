@@ -1,4 +1,5 @@
 const User = require("../models/user");
+const Recipe = require("../models/recipe");
 const Message = require("../utils/message");
 
 const existRecipeInFavorites = ({ favorites }, id_recipe) =>
@@ -13,3 +14,10 @@ const setFavorite = async ({ recipe, _user_id }) => {
   await user.save();
   return Message.success();
 };
+
+const getAll = async () => {
+  const recipes = await Recipe.find({});
+  return recipes;
+};
+
+module.exports = { setFavorite, getAll };
