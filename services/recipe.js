@@ -23,11 +23,11 @@ const all = async ({ page = 1, limit = 10 }) => {
   return recipes;
 };
 
-const find = async (_id, { _user_id }) => {
-  const recipe = await Recipe.find({ _id });
+const find = async (_id) => {
+  const recipe = await Recipe.find({ _id }).populate("comments.user");
   return !recipe
     ? Message.notFound("Recipe not found")
     : Message.success(recipe);
 };
 
-module.exports = { setFavorite, all };
+module.exports = { setFavorite, all, find };

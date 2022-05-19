@@ -12,7 +12,7 @@ const all = async (req, res) => {
 
 const find = async (req, res) => {
   try {
-    const { code, message, data } = await Recipe.find(req.params.id, req.body);
+    const { code, message, data } = await Recipe.find(req.params.id);
     res.status(code).send({ message, data });
   } catch (error) {
     res.status(400).send({ message: "Fav couldn't be created ", error });
