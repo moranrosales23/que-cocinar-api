@@ -14,4 +14,13 @@ const logIn = async ({ email, password }) => {
 
 const add = ({ email, password }) => User.create({ email, password });
 
-module.exports = { logIn, add };
+const edit = async ({ name, lastname, nickname, _user_id: _id }) => {
+  const user = await User.findOneAndUpdate(
+    { _id },
+    { name, lastname, nickname },
+    { new: true }
+  );
+  return Message.success(user, "The user has been updated");
+};
+
+module.exports = { logIn, add, edit };

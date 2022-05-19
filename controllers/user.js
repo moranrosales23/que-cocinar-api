@@ -21,4 +21,15 @@ const create = async (req, res) => {
   }
 };
 
-module.exports = { logIn, create };
+const update = async (req, res) => {
+  try {
+    console.log(req.body);
+    const { code, message, data } = await User.edit(req.body);
+    res.status(code).send({ message, data });
+  } catch (error) {
+    const err = error.message || error;
+    res.status(400).send({ message: "User couldn't be updated", err });
+  }
+};
+
+module.exports = { logIn, create, update };

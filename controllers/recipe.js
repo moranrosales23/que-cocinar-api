@@ -15,8 +15,36 @@ const find = async (req, res) => {
     const { code, message, data } = await Recipe.find(req.params.id);
     res.status(code).send({ message, data });
   } catch (error) {
-    res.status(400).send({ message: "Fav couldn't be created ", error });
+    res.status(400).send({ message: "The Recipe not exist", error });
   }
 };
 
-module.exports = { all, find };
+const favorites = async (req, res) => {
+  try {
+    const { code, message, data } = await Recipe.setFavorite(
+      req.params.id,
+      req.body
+    );
+    res.status(code).send({ message, data });
+  } catch (error) {
+    const err = error.message;
+    res.status(400).send({ message: "Error", err });
+  }
+};
+
+const addComment = async (req, res) => {
+  try {
+    const { code, message, data } = await Recipe.addComment(
+      req.params.id,
+      req.body
+    );
+    res.status(201).send({ message, data });
+  } catch (error) {
+    const err = error.message || error;
+    res
+      .status(400)
+      .send({ message: "Comment couldn't be created", error: err });
+  }
+};
+
+module.exports = { all, find, favorites, addComment };

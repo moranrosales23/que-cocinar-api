@@ -34,8 +34,8 @@ const User = new mongoose.Schema({
   favorites: [
     {
       recipe: {
-        type: String,
-        required: [true, "The recipe is required"],
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Recipe",
       },
     },
   ],
