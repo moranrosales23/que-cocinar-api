@@ -23,4 +23,14 @@ const edit = async ({ name, lastname, nickname, _user_id: _id }) => {
   return Message.success(user, "The user has been updated");
 };
 
-module.exports = { logIn, add, edit };
+const getFavorites = async ({ page = 1, limit = 10, _user_id }) => {
+  const favorites = await User.findById(_user_id)
+    .populate("favorites.recipe", "_id name category img rate")
+    .paginate({
+      page,
+      limit,
+    });
+  return favorites;
+};
+
+module.exports = { logIn, add, edit, getFavorites };

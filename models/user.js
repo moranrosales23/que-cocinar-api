@@ -39,6 +39,14 @@ const User = new mongoose.Schema({
       },
     },
   ],
+  ingredients: [
+    {
+      description: {
+        type: String,
+        minLength: 2,
+      },
+    },
+  ],
 });
 
 User.pre("save", async function (next) {

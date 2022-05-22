@@ -13,6 +13,7 @@ const logIn = async (req, res) => {
 
 const create = async (req, res) => {
   try {
+    console.log(req.body);
     const user = await User.add(req.body);
     res.status(201).send({ message: "User created", data: user });
   } catch (error) {
