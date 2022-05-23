@@ -14,7 +14,10 @@ const create = async (req, res) => {
 
 const update = async (req, res) => {
   try {
-    const { code, message, data } = await Ingredient.edit(req.body);
+    const { code, message, data } = await Ingredient.edit(
+      req.params.id,
+      req.body
+    );
     res.status(code).send({ message, data });
   } catch (error) {
     const err = error.message || error;
@@ -22,4 +25,17 @@ const update = async (req, res) => {
   }
 };
 
-module.exports = { create, update };
+const remove = async (req, res) => {
+  try {
+    const { code, message, data } = await Ingredient.remove(
+      req.params.id,
+      req.body
+    );
+    res.status(code).send({ message, data });
+  } catch (error) {
+    const err = error.message || error;
+    res.status(400).send({ message: "Ingredient couldn't be updated", err });
+  }
+};
+
+module.exports = { create, update, remove };

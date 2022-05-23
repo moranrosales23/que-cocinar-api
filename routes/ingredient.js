@@ -4,6 +4,7 @@ const Auth = require("../middleware/auth");
 const api = express.Router();
 
 api.post("/", Auth, Ingredient.create);
-api.put("/:id", Auth, Ingredient.update);
+api.patch("/:id", Auth, Ingredient.update);
+api.delete("/:id", Auth, Ingredient.remove);
 
 module.exports = api;
