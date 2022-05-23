@@ -24,12 +24,15 @@ const User = new mongoose.Schema({
   },
   nickname: {
     type: String,
+    minLength: 2,
   },
   complete_perfil: {
     type: Boolean,
+    default: false,
   },
   img: {
     type: String,
+    default: "",
   },
   favorites: [
     {

@@ -18,7 +18,7 @@ const add = async ({ ingredient, _user_id }) => {
   );
 };
 
-const edit = async ({ _id, ingredient, _user_id }) => {
+const edit = async (_id, { ingredient, _user_id }) => {
   const user = await User.findById(_user_id);
   if (!user) return Message.notFound("User not found");
   user.ingredients = user.ingredients.map((ingredients) => {
@@ -31,12 +31,4 @@ const edit = async ({ _id, ingredient, _user_id }) => {
   return Message.success(user, "The user has been updated");
 };
 
-const all = async ({ page = 1, limit = 10, _user_id }) => {
-  const ingredients = await User.findById(_user_id, "ingredients").paginate({
-    page,
-    limit,
-  });
-  return ingredients;
-};
-
-module.exports = { all, add, edit };
+module.exports = { add, edit };

@@ -1,5 +1,5 @@
-const success = (data = {}, message = "") => ({
-  code: 200,
+const success = (data = {}, message = "", code = 200) => ({
+  code,
   message,
   data,
 });

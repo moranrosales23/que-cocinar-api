@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { User, Recipe } = require("./routes");
+const { User, Recipe, Ingredient } = require("./routes");
 
 const PREFIX = "/api/v1/";
 
@@ -10,5 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use(`${PREFIX}auth`, User);
 app.use(`${PREFIX}recipe`, Recipe);
+app.use(`${PREFIX}ingredient`, Ingredient);
 
 module.exports = app;

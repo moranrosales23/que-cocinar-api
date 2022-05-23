@@ -3,10 +3,10 @@ const Recipe = require("../models/recipe");
 const Message = require("../utils/message");
 
 const existRecipeInFavorites = ({ favorites }, id_recipe) =>
-  favorites.filter(({ recipe }) => recipe == id_recipe).length > 0;
+  favorites.filter(({ recipe }) => recipe._id == id_recipe).length > 0;
 
 const removeFavorite = ({ favorites }, id_recipe) =>
-  favorites.filter(({ recipe }) => recipe != id_recipe);
+  favorites.filter(({ recipe }) => recipe._id != id_recipe);
 
 const setFavorite = async (recipe, { _user_id }) => {
   const user = await User.findById(_user_id);

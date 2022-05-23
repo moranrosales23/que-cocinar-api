@@ -5,10 +5,11 @@ const Message = require("../utils/message");
 const isEqualPass = (password, current) => bcrypt.compare(password, current);
 
 const logIn = async ({ email, password }) => {
-  const user = await User.findOne({ email }).select("password").exec();
+  const user = await User.findOne({ email });
+  const { password: pass, _id, ...rest } = user._doc;
   if (!user) return Message.notFound("User o Password incorrect");
-  return (await isEqualPass(password, user.password))
-    ? Message.success(user.JWT())
+  return (await isEqualPass(password, pass))
+    ? Message.success({ ...rest, tk: user.JWT() })
     : Message.notFound("User o Password incorrect");
 };
 
