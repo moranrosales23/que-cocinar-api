@@ -18,8 +18,11 @@ const setFavorite = async (recipe, { _user_id }) => {
   return Message.success(user.favorites);
 };
 
-const all = async ({ page = 1, limit = 10 }) => {
-  const recipes = await Recipe.find({}, "_id name category img rate").paginate({
+const all = async ({ page = 1, limit = 10, search = "" }) => {
+  const recipes = await Recipe.find(
+    { name: { $regex: search, $options: "i" } },
+    "_id name category img rate"
+  ).paginate({
     page,
     limit,
   });

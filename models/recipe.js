@@ -55,4 +55,5 @@ const Recipe = new mongoose.Schema({
 });
 
 Recipe.plugin(Paginate);
+Recipe.index({ name: "text" });
 module.exports = mongoose.model("Recipe", Recipe);

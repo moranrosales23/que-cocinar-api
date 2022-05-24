@@ -42,9 +42,9 @@ const uploadImage = async function (file, { _user_id }) {
   try {
     if (file === undefined) return Message.notFound("The file does not exist");
     cloudinary.config({
-      cloud_name: "dql9xjnqg",
-      api_key: "217411526214748",
-      api_secret: "_aZ5wDgZXx8XB3hRZU6j4pwgCWc",
+      cloud_name: process.env.CLOUDINARY_NAME_APP,
+      api_key: process.env.CLOUDINARY_API_KEY,
+      api_secret: process.env.CLOUDINARY_API_SECRET,
     });
     const user = await User.findById(_user_id);
     if (!user) return Message.notFound("User not found");
