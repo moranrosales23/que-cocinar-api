@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/user");
 const Message = require("../utils/message");
+const cloudinary = require("cloudinary").v2;
 
 const isEqualPass = (password, current) => bcrypt.compare(password, current);
 
@@ -37,4 +38,36 @@ const getFavorites = async ({ page = 1, limit = 10, _user_id }) => {
   return favorites;
 };
 
-module.exports = { logIn, add, edit, getFavorites };
+const uploadImage = async function (file, { _user_id }) {
+  try {
+    if (file === undefined) return Message.notFound("The file does not exist");
+    cloudinary.config({
+      cloud_name: "dql9xjnqg",
+      api_key: "217411526214748",
+      api_secret: "_aZ5wDgZXx8XB3hRZU6j4pwgCWc",
+    });
+    const user = await User.findById(_user_id);
+    if (!user) return Message.notFound("User not found");
+
+    const data_img = await new Promise((resolve, reject) => {
+      cloudinary.uploader
+        .upload_stream({ folder: "profile" }, (error, result) => {
+          if (result) resolve(result);
+          else reject(error);
+        })
+        .end(file.buffer);
+    });
+    const public_id = user.public_id;
+    user.public_id = data_img.public_id;
+    user.img = data_img.url;
+    await user.save();
+    if (public_id !== undefined) {
+      await cloudinary.uploader.destroy(public_id);
+    }
+    return Message.success({ image: user.img }, "The image has been updated");
+  } catch (error) {
+    return Message.error(error.message);
+  }
+};
+
+module.exports = { logIn, add, edit, getFavorites, uploadImage };

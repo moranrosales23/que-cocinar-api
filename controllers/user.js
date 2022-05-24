@@ -13,7 +13,6 @@ const logIn = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    console.log(req.body);
     const user = await User.add(req.body);
     res.status(201).send({ message: "User created", data: user });
   } catch (error) {
@@ -24,7 +23,6 @@ const create = async (req, res) => {
 
 const update = async (req, res) => {
   try {
-    console.log(req.body);
     const { code, message, data } = await User.edit(req.body);
     res.status(code).send({ message, data });
   } catch (error) {
@@ -34,11 +32,16 @@ const update = async (req, res) => {
 };
 
 const image = async (req, res) => {
-  console.log(
-    "*******************************************************************************************************"
-  );
-  console.log(req.file);
-  console.log(req.body);
+  try {
+    const { code, message, data } = await User.uploadImage(req.file, req.body);
+    console.log(message);
+    console.log(data);
+    res.status(code).send({ message, data });
+  } catch (error) {
+    const err = error.message || error;
+    console.log(err);
+    res.status(400).send({ message: "The Image couldn't be updated", err });
+  }
 };
 
 module.exports = { logIn, create, update, image };

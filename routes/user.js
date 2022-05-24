@@ -7,6 +7,6 @@ console.log(Multer);
 api.post("/", User.logIn);
 api.post("/register", User.create);
 api.patch("/user", Auth, User.update);
-api.post("/user/img", Auth, Multer.single("image"), User.image);
+api.post("/user/img", Multer.single("image"), Auth, User.image);
 
 module.exports = api;

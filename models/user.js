@@ -50,6 +50,9 @@ const User = new mongoose.Schema({
       },
     },
   ],
+  public_id: {
+    type: String,
+  },
 });
 
 User.pre("save", async function (next) {
