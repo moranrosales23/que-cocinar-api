@@ -34,12 +34,9 @@ const update = async (req, res) => {
 const image = async (req, res) => {
   try {
     const { code, message, data } = await User.uploadImage(req.file, req.body);
-    console.log(message);
-    console.log(data);
     res.status(code).send({ message, data });
   } catch (error) {
     const err = error.message || error;
-    console.log(err);
     res.status(400).send({ message: "The Image couldn't be updated", err });
   }
 };

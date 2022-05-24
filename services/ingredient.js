@@ -3,7 +3,6 @@ const Message = require("../utils/message");
 
 const existIngredient = (ingredients, ingredient) =>
   ingredients.filter(({ description }) => {
-    console.log(description, ingredient);
     if (!description) return false;
     return description.toLowerCase() === ingredient.toLowerCase();
   }).length > 0;

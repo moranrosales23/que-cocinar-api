@@ -10,7 +10,6 @@ const isAuthenticated = (req, res, next) => {
       process.env.JWT_KEY_SECRET
     );
     req.body._user_id = decoded.id;
-    console.log(decoded);
   } catch (error) {
     return res.status(403).send({ message: "Invalid token" });
   }
