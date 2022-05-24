@@ -33,4 +33,12 @@ const update = async (req, res) => {
   }
 };
 
-module.exports = { logIn, create, update };
+const image = async (req, res) => {
+  console.log(
+    "*******************************************************************************************************"
+  );
+  console.log(req.file);
+  console.log(req.body);
+};
+
+module.exports = { logIn, create, update, image };

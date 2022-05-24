@@ -18,10 +18,13 @@ const add = ({ email, password }) => User.create({ email, password });
 const edit = async ({ name, lastname, nickname, _user_id: _id }) => {
   const user = await User.findOneAndUpdate(
     { _id },
-    { name, lastname, nickname },
+    { name, lastname, nickname, complete_perfil: true },
     { new: true }
   );
-  return Message.success(user, "The user has been updated");
+  return Message.success(
+    { name, lastname, nickname, complete_perfil: true },
+    "The user has been updated"
+  );
 };
 
 const getFavorites = async ({ page = 1, limit = 10, _user_id }) => {
