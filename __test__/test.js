@@ -7,10 +7,6 @@ const recipeModel = require("../models/recipe");
 
 beforeAll((done) => {
   mongoose.connect(process.env.DB_URI, () => done());
-  for (const recipe of dataRecipe) {
-    const recip = recipeModel.create(recipe);
-    console.log(recip._id);
-  }
 });
 
 afterAll((done) => {
@@ -58,7 +54,7 @@ test("Login -> POST /api/v1/auth/", async () => {
     .expect(200)
     .then((response) => {
       expect(response.body.data).toBeDefined();
-      token = response.body.data;
+      token = response.body.data.tk;
     });
 });
 
@@ -69,3 +65,32 @@ test("Error Login -> POST /api/v1/auth/", async () => {
   };
   await supertest(app).post("/api/v1/auth/").send(data).expect(404);
 });
+
+test("Get All Recipes -> GET /api/v1/recipe", async () => {
+  await supertest(app)
+    .get("/api/v1/recipe")
+    .set("Authorization", `Bearer ${token}`)
+    .expect(200)
+    .then((response) => {
+      expect(response.body.data).toBeDefined();
+      expect(response.body.data.length).toEqual(4);
+    });
+});
+
+test("Search Recipes -> GET /api/v1/recipe", async () => {
+  await supertest(app)
+    .get("/api/v1/recipe?search=manzana")
+    .set("Authorization", `Bearer ${token}`)
+    .expect(200)
+    .then((response) => {
+      expect(response.body.data).toBeDefined();
+      expect(response.body.data.length).toEqual(2);
+    });
+});
+
+async function mock() {
+  for (const recipe of dataRecipe) {
+    await recipeModel.create(recipe);
+  }
+}
+mock();
